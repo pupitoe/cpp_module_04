@@ -6,14 +6,14 @@
 #    By: tlassere <tlassere@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/10 13:53:46 by tlassere          #+#    #+#              #
-#    Updated: 2024/05/17 19:42:29 by tlassere         ###   ########.fr        #
+#    Updated: 2024/05/17 20:08:58 by tlassere         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CXX			::= c++
 CXXFLAGS	::= -Wall -Wextra -Werror -std=c++98
 NAME		::= any_mal 
-SOURCES		::= main.cpp
+SOURCES		::= main.cpp Animal.cpp Dog.cpp Cat.cpp
 OBJS		::= $(SOURCES:.cpp=.o)
 
 all: $(NAME)

@@ -1,19 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Animal.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tlassere <tlassere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/17 19:42:35 by tlassere          #+#    #+#             */
-/*   Updated: 2024/05/17 20:10:35 by tlassere         ###   ########.fr       */
+/*   Created: 2024/05/17 19:44:41 by tlassere          #+#    #+#             */
+/*   Updated: 2024/05/17 20:05:55 by tlassere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Dog.hpp"
-#include "Cat.hpp"
+#ifndef ANIMAL_HPP
+# define ANIMAL_HPP
 
-int	main(void)
+# include <iostream>
+
+class	Animal
 {
-	return (0);
-}
+	protected:
+		std::string	type;
+	
+	public:
+		Animal( void );
+		~Animal( void );
+		Animal( Animal const& cpy );
+		Animal& operator=( Animal const& cpy );
+
+		std::string		getType(void);
+		virtual void	makeSound(void);
+};
+
+#endif

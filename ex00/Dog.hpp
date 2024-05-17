@@ -1,19 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Dog.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tlassere <tlassere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/17 19:42:35 by tlassere          #+#    #+#             */
-/*   Updated: 2024/05/17 20:10:35 by tlassere         ###   ########.fr       */
+/*   Created: 2024/05/17 19:44:41 by tlassere          #+#    #+#             */
+/*   Updated: 2024/05/17 19:48:56 by tlassere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Dog.hpp"
-#include "Cat.hpp"
+#ifndef Dog_HPP
+# define Dog_HPP
 
-int	main(void)
+# include "Animal.hpp"
+
+class	Dog: public Animal
 {
-	return (0);
-}
+	public:
+		Dog( void );
+		~Dog( void );
+		Dog( Dog const& cpy );
+		Dog& operator=( Dog const& cpy );
+
+		virtual void	makeSound(void);
+};
+
+#endif

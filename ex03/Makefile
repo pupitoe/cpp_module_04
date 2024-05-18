@@ -6,14 +6,14 @@
 #    By: tlassere <tlassere@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/10 13:53:46 by tlassere          #+#    #+#              #
-#    Updated: 2024/05/18 21:49:04 by tlassere         ###   ########.fr        #
+#    Updated: 2024/05/18 21:52:15 by tlassere         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CXX			::= c++
 CXXFLAGS	::= -Wall -Wextra -Werror -std=c++98
 NAME		::= Interface_recap
-SOURCES		::= main.cpp AMateria.cpp Ice.cpp Cure.cpp
+SOURCES		::= main.cpp AMateria.cpp Ice.cpp Cure.cpp Character.cpp
 OBJS		::= $(SOURCES:.cpp=.o)
 
 all: $(NAME)

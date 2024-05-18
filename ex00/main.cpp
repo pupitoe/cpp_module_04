@@ -6,7 +6,7 @@
 /*   By: tlassere <tlassere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/17 19:42:35 by tlassere          #+#    #+#             */
-/*   Updated: 2024/05/18 15:09:58 by tlassere         ###   ########.fr       */
+/*   Updated: 2024/05/18 15:34:31 by tlassere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ int	main(void)
 		{
 			std::cout << j->getType() << " " << std::endl;
 			std::cout << i->getType() << " " << std::endl;
-			//i->makeSound();
-			//j->makeSound();
-			//meta->makeSound();
+			i->makeSound();
+			j->makeSound();
+			meta->makeSound();
 		}
 		if (meta)
 			delete meta;
@@ -36,7 +36,7 @@ int	main(void)
 		if (j)
 			delete j;
 	}
-	//std::cout << std::endl;
+	std::cout << std::endl;
 	{
 		const WrongAnimal* a = new (std::nothrow) WrongCat();
 		const WrongCat* b = new (std::nothrow) WrongCat();

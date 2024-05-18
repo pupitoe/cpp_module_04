@@ -6,7 +6,7 @@
 /*   By: tlassere <tlassere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/17 19:44:41 by tlassere          #+#    #+#             */
-/*   Updated: 2024/05/18 18:13:00 by tlassere         ###   ########.fr       */
+/*   Updated: 2024/05/18 18:38:22 by tlassere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class	Animal
 	
 	public:
 		Animal( void );
-		virtual ~Animal( void );
+		virtual ~Animal( void ) = 0;
 		Animal( Animal const& cpy );
 		Animal& operator=( Animal const& cpy );
 

@@ -6,7 +6,7 @@
 /*   By: tlassere <tlassere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/17 19:42:35 by tlassere          #+#    #+#             */
-/*   Updated: 2024/05/18 18:01:56 by tlassere         ###   ########.fr       */
+/*   Updated: 2024/05/18 18:05:11 by tlassere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,5 +100,9 @@ int	main(void)
 		for (size_t i = 0; i < 100 && tab[i]; i++)
 			delete tab[i];
 	}
+	// To test abstract class
+	//{
+	//	Animal	diggi;
+	//}
 	return (0);
 }

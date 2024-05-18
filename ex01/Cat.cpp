@@ -41,7 +41,7 @@ Cat::Cat( Cat const& cpy )
 Cat& Cat::operator=( Cat const& cpy )
 {
 	std::cout << "Cat copy asignement operator called" << std::endl;
-	if (this->brain)
+	if (this->brain && cpy.brain)
 		*(this->brain) = *(cpy.brain);
 	return (*this);
 }

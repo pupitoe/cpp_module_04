@@ -17,7 +17,7 @@ Dog::Dog( void )
 	std::cout << "Dog default constructor called" << std::endl;
 	this->type = "Dog";
 	this->brain = new (std::nothrow) Brain();
-	if (brain)
+	if (this->brain)
 		brain->set_ideas("hello");
 	return ;
 }
@@ -41,7 +41,7 @@ Dog::Dog( Dog const& cpy )
 Dog& Dog::operator=( Dog const& cpy )
 {
 	std::cout << "Dog copy asignement operator called" << std::endl;
-	if (this->brain)
+	if (this->brain && cpy.brain)
 		*(this->brain) = *(cpy.brain);
 	return (*this);
 }

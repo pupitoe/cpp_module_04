@@ -39,7 +39,7 @@ Cat& Cat::operator=( Cat const& cpy )
 	return (*this);
 }
 
-void	Cat::makeSound( void )
+void	Cat::makeSound( void ) const
 {
 	std::cout << "no I wouldn't make a sound" << std::endl;
 	return ;

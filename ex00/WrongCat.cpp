@@ -1,51 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.cpp                                         :+:      :+:    :+:   */
+/*   WrongCat.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tlassere <tlassere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/17 19:45:10 by tlassere          #+#    #+#             */
-/*   Updated: 2024/05/17 20:05:29 by tlassere         ###   ########.fr       */
+/*   Updated: 2024/05/18 14:59:48 by tlassere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#include "WrongCat.hpp"
 
-Animal::Animal( void )
+WrongCat::WrongCat( void )
 {
-	std::cout << "Animal default constructor called" << std::endl;
-	this->type = "no animal :(";
+	std::cout << "WrongCat default constructor called" << std::endl;
+	this->type = "WrongCat";
 	return ;
 }
 
-Animal::~Animal( void )
+WrongCat::~WrongCat( void )
 {
-	std::cout << "Animal deconstructor called" << std::endl;
+	std::cout << "WrongCat deconstructor called" << std::endl;
 	return ;
 }
 
-Animal::Animal( Animal const& cpy )
+WrongCat::WrongCat( WrongCat const& cpy )
 {
-	std::cout << "Animal copy constructor called" << std::endl;
+	std::cout << "WrongCat copy constructor called" << std::endl;
 	*this = cpy;
 	return ;
 }
 
-Animal& Animal::operator=( Animal const& cpy )
+WrongCat& WrongCat::operator=( WrongCat const& cpy )
 {
-	std::cout << "Animal copy asignement operator called" << std::endl;
-	this->type = cpy.type;
+	std::cout << "WrongCat copy asignement operator called" << std::endl;
+	(void)cpy;
 	return (*this);
 }
 
-std::string	Animal::getType( void ) const
+void	WrongCat::makeSound( void ) const
 {
-	return (this->type);
-}
-
-void	Animal::makeSound( void ) const
-{
-	std::cout << "piu piu hu hu I don't have sound" << std::endl;
+	std::cout << "I have a wrong sound" << std::endl;
 	return ;
 }

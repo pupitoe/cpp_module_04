@@ -23,7 +23,7 @@ class	Dog: public Animal
 		Dog( Dog const& cpy );
 		Dog& operator=( Dog const& cpy );
 
-		virtual void	makeSound(void);
+		void	makeSound(void) const;
 };
 
 #endif

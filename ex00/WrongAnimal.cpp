@@ -1,51 +1,51 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.cpp                                         :+:      :+:    :+:   */
+/*   WrongAnimal.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tlassere <tlassere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/17 19:45:10 by tlassere          #+#    #+#             */
-/*   Updated: 2024/05/17 20:05:29 by tlassere         ###   ########.fr       */
+/*   Updated: 2024/05/18 14:49:12 by tlassere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#include "WrongAnimal.hpp"
 
-Animal::Animal( void )
+WrongAnimal::WrongAnimal( void )
 {
-	std::cout << "Animal default constructor called" << std::endl;
-	this->type = "no animal :(";
+	std::cout << "WrongAnimal default constructor called" << std::endl;
+	this->type = "no Wrong animal :(((( :(";
 	return ;
 }
 
-Animal::~Animal( void )
+WrongAnimal::~WrongAnimal( void )
 {
-	std::cout << "Animal deconstructor called" << std::endl;
+	std::cout << "WrongAnimal deconstructor called" << std::endl;
 	return ;
 }
 
-Animal::Animal( Animal const& cpy )
+WrongAnimal::WrongAnimal( WrongAnimal const& cpy )
 {
-	std::cout << "Animal copy constructor called" << std::endl;
+	std::cout << "WrongAnimal copy constructor called" << std::endl;
 	*this = cpy;
 	return ;
 }
 
-Animal& Animal::operator=( Animal const& cpy )
+WrongAnimal& WrongAnimal::operator=( WrongAnimal const& cpy )
 {
-	std::cout << "Animal copy asignement operator called" << std::endl;
+	std::cout << "WrongAnimal copy asignement operator called" << std::endl;
 	this->type = cpy.type;
 	return (*this);
 }
 
-std::string	Animal::getType( void ) const
+std::string	WrongAnimal::getType( void ) const
 {
 	return (this->type);
 }
 
-void	Animal::makeSound( void ) const
+void	WrongAnimal::makeSound( void ) const
 {
-	std::cout << "piu piu hu hu I don't have sound" << std::endl;
+	std::cout << "I am so strong in french" << std::endl;
 	return ;
 }

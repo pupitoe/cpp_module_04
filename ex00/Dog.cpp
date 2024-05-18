@@ -39,7 +39,7 @@ Dog& Dog::operator=( Dog const& cpy )
 	return (*this);
 }
 
-void	Dog::makeSound( void )
+void	Dog::makeSound( void ) const
 {
 	std::cout << "Wouf Wouf" << std::endl;
 	return ;

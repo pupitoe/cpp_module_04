@@ -6,7 +6,7 @@
 /*   By: tlassere <tlassere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/17 19:44:41 by tlassere          #+#    #+#             */
-/*   Updated: 2024/05/17 20:05:55 by tlassere         ###   ########.fr       */
+/*   Updated: 2024/05/18 15:09:15 by tlassere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,13 @@ class	Animal
 	
 	public:
 		Animal( void );
-		~Animal( void );
+		virtual ~Animal( void );
 		Animal( Animal const& cpy );
 		Animal& operator=( Animal const& cpy );
 
-		std::string		getType(void);
-		virtual void	makeSound(void);
+		std::string		getType(void) const;
+		virtual void	makeSound(void) const;
+		
 };
 
 #endif

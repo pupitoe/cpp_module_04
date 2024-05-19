@@ -6,7 +6,7 @@
 /*   By: tlassere <tlassere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 21:41:38 by tlassere          #+#    #+#             */
-/*   Updated: 2024/05/18 21:44:34 by tlassere         ###   ########.fr       */
+/*   Updated: 2024/05/19 16:25:35 by tlassere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,26 @@
 
 Cure::Cure( void ): AMateria("Cure")
 {
-	std::cout << "Cure default constructor called" << std::endl;
+	//std::cout << "Cure default constructor called" << std::endl;
 	return ;
 }
 
 Cure::~Cure( void )
 {
-	std::cout << "Cure default deconstructor called" << std::endl;
+	//std::cout << "Cure default deconstructor called" << std::endl;
 	return ;
 }
 
 Cure::Cure( Cure const& cpy ): AMateria(cpy)
 {
-	std::cout << "Cure copy constructor called" << std::endl;
+	//std::cout << "Cure copy constructor called" << std::endl;
 	*this = cpy;
 	return ;
 }
 
 Cure&	Cure::operator=( Cure const& cpy )
 {
-	std::cout << "Cure copy asignement operator called" << std::endl;
+	//std::cout << "Cure copy asignement operator called" << std::endl;
 	(void)cpy;
 	return (*this);
 }

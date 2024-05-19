@@ -6,13 +6,13 @@
 /*   By: tlassere <tlassere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 21:41:38 by tlassere          #+#    #+#             */
-/*   Updated: 2024/05/19 16:25:35 by tlassere         ###   ########.fr       */
+/*   Updated: 2024/05/19 16:37:18 by tlassere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include "Cure.hpp"
 
-Cure::Cure( void ): AMateria("Cure")
+Cure::Cure( void ): AMateria("cure")
 {
 	//std::cout << "Cure default constructor called" << std::endl;
 	return ;

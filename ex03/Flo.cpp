@@ -1,54 +1,53 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Ice.cpp                                            :+:      :+:    :+:   */
+/*   Flo.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tlassere <tlassere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 21:42:16 by tlassere          #+#    #+#             */
-/*   Updated: 2024/05/19 16:37:10 by tlassere         ###   ########.fr       */
+/*   Updated: 2024/05/19 16:51:25 by tlassere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "Ice.hpp"
+# include "Flo.hpp"
 
-Ice::Ice( void ): AMateria("ice")
+Flo::Flo( void ): AMateria("flo")
 {
-	//std::cout << "Ice default constructor called" << std::endl;
+	//std::cout << "Flo default constructor called" << std::endl;
 	return ;
 }
 
-Ice::~Ice( void )
+Flo::~Flo( void )
 {
-	//std::cout << "Ice default deconstructor called" << std::endl;
+	//std::cout << "Flo default deconstructor called" << std::endl;
 	return ;
 }
 
-Ice::Ice( Ice const& cpy ): AMateria(cpy)
+Flo::Flo( Flo const& cpy ): AMateria(cpy)
 {
-	//std::cout << "Ice copy constructor called" << std::endl;
+	//std::cout << "Flo copy constructor called" << std::endl;
 	*this = cpy;
 	return ;
 }
 
-Ice&	Ice::operator=( Ice const& cpy )
+Flo&	Flo::operator=( Flo const& cpy )
 {
-	//std::cout << "Ice copy asignement operator called" << std::endl;
+	//std::cout << "Flo copy asignement operator called" << std::endl;
 	(void)cpy;
 	return (*this);
 }
 
-void	Ice::use(ICharacter& target)
+void	Flo::use(ICharacter& target)
 {
-	std::cout << "* shoots an ice bolt at " << target.getName()
-		<< " *" << std::endl;
+	std::cout << "* Super kick in " << target.getName() << " *" << std::endl;
 }
 
-AMateria*	Ice::clone( void ) const
+AMateria*	Flo::clone( void ) const
 {
 	AMateria*	clone;
 	
-	clone = new (std::nothrow) Ice();
+	clone = new (std::nothrow) Flo();
 	if (clone)
 		*clone = *this;
 	return (clone); 

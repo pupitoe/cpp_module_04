@@ -6,7 +6,7 @@
 /*   By: tlassere <tlassere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 21:52:17 by tlassere          #+#    #+#             */
-/*   Updated: 2024/05/19 16:29:08 by tlassere         ###   ########.fr       */
+/*   Updated: 2024/05/19 17:07:24 by tlassere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,6 @@ void	Character::equip(AMateria* m)
 	i = 0;
 	while (i < INV_LIM && m != this->inventory[i])
 		i++;
-	std::cout << i << " ah" << std::endl;
 	if(i == INV_LIM && m )
 	{
 		i = 0;
@@ -95,5 +94,5 @@ void	Character::use(int idx, ICharacter& target)
 	if (idx >= 0 && idx < INV_LIM && this->inventory[idx])
 		this->inventory[idx]->use(target);
 	else
-		std::cout << "Use out of band" << std::endl;
+		std::cout << "Use out of band / or no materia in this pos" << std::endl;
 }

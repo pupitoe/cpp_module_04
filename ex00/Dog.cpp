@@ -35,7 +35,7 @@ Dog::Dog( Dog const& cpy )
 Dog& Dog::operator=( Dog const& cpy )
 {
 	std::cout << "Dog copy asignement operator called" << std::endl;
-	(void)cpy;
+	this->type = cpy.type;
 	return (*this);
 }
 

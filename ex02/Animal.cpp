@@ -6,7 +6,7 @@
 /*   By: tlassere <tlassere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/17 19:45:10 by tlassere          #+#    #+#             */
-/*   Updated: 2024/05/18 16:29:26 by tlassere         ###   ########.fr       */
+/*   Updated: 2024/05/20 16:02:11 by tlassere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,10 +43,3 @@ std::string	Animal::getType( void ) const
 {
 	return (this->type);
 }
-
-void	Animal::makeSound( void ) const
-{
-	std::cout << "piu piu hu hu I don't have sound" << std::endl;
-	return ;
-}
-

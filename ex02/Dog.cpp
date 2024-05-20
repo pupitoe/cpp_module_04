@@ -41,6 +41,7 @@ Dog::Dog( Dog const& cpy )
 Dog& Dog::operator=( Dog const& cpy )
 {
 	std::cout << "Dog copy asignement operator called" << std::endl;
+	this->type = cpy.type;
 	if (this->brain && cpy.brain)
 		*(this->brain) = *(cpy.brain);
 	return (*this);

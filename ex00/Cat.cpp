@@ -35,7 +35,7 @@ Cat::Cat( Cat const& cpy )
 Cat& Cat::operator=( Cat const& cpy )
 {
 	std::cout << "Cat copy asignement operator called" << std::endl;
-	(void)cpy;
+	this->type = cpy.type;
 	return (*this);
 }
 

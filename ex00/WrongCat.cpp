@@ -6,7 +6,7 @@
 /*   By: tlassere <tlassere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/17 19:45:10 by tlassere          #+#    #+#             */
-/*   Updated: 2024/05/18 14:59:48 by tlassere         ###   ########.fr       */
+/*   Updated: 2024/05/20 15:57:59 by tlassere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ WrongCat::WrongCat( WrongCat const& cpy )
 WrongCat& WrongCat::operator=( WrongCat const& cpy )
 {
 	std::cout << "WrongCat copy asignement operator called" << std::endl;
-	(void)cpy;
+	this->type = cpy.type;
 	return (*this);
 }
 

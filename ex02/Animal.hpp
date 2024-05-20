@@ -6,7 +6,7 @@
 /*   By: tlassere <tlassere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/17 19:44:41 by tlassere          #+#    #+#             */
-/*   Updated: 2024/05/18 18:38:22 by tlassere         ###   ########.fr       */
+/*   Updated: 2024/05/20 15:54:13 by tlassere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define ANIMAL_HPP
 
 # include <iostream>
-
 class	Animal
 {
 	protected:

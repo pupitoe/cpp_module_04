@@ -6,7 +6,7 @@
 /*   By: tlassere <tlassere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 21:42:16 by tlassere          #+#    #+#             */
-/*   Updated: 2024/05/19 16:51:25 by tlassere         ###   ########.fr       */
+/*   Updated: 2024/05/21 16:22:59 by tlassere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ Flo::Flo( Flo const& cpy ): AMateria(cpy)
 Flo&	Flo::operator=( Flo const& cpy )
 {
 	//std::cout << "Flo copy asignement operator called" << std::endl;
-	(void)cpy;
+	this->type = cpy.type;
 	return (*this);
 }
 

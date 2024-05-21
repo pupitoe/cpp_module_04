@@ -6,7 +6,7 @@
 /*   By: tlassere <tlassere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/19 16:44:36 by tlassere          #+#    #+#             */
-/*   Updated: 2024/05/19 16:51:38 by tlassere         ###   ########.fr       */
+/*   Updated: 2024/05/21 16:22:48 by tlassere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ Chris::Chris( Chris const& cpy ): AMateria(cpy)
 Chris&	Chris::operator=( Chris const& cpy )
 {
 	//std::cout << "Chris copy asignement operator called" << std::endl;
-	(void)cpy;
+	this->type = cpy.type;
 	return (*this);
 }
 

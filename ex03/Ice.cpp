@@ -6,7 +6,7 @@
 /*   By: tlassere <tlassere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 21:42:16 by tlassere          #+#    #+#             */
-/*   Updated: 2024/05/19 16:37:10 by tlassere         ###   ########.fr       */
+/*   Updated: 2024/05/21 16:23:05 by tlassere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ Ice::Ice( Ice const& cpy ): AMateria(cpy)
 Ice&	Ice::operator=( Ice const& cpy )
 {
 	//std::cout << "Ice copy asignement operator called" << std::endl;
-	(void)cpy;
+	this->type = cpy.type;
 	return (*this);
 }
 

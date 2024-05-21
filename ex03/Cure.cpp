@@ -6,7 +6,7 @@
 /*   By: tlassere <tlassere@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/18 21:41:38 by tlassere          #+#    #+#             */
-/*   Updated: 2024/05/19 16:37:18 by tlassere         ###   ########.fr       */
+/*   Updated: 2024/05/21 16:23:02 by tlassere         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ Cure::Cure( Cure const& cpy ): AMateria(cpy)
 Cure&	Cure::operator=( Cure const& cpy )
 {
 	//std::cout << "Cure copy asignement operator called" << std::endl;
-	(void)cpy;
+	this->type = cpy.type;
 	return (*this);
 }
 
